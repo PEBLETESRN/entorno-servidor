@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>USUARIOS ENCONTRADOS</h1>
+    <ul>
+        <% for (let user of usuarios) { %>
+            <li><%= user.nombre %></li>
+            <li><%= user.edad %></li>
+            <br>
+        <% } %>
+    </ul>
+    <input onclick="hola()" type="button" value="hola">
+    <script>
+        function hola(){
+            alert ("hola")
+        }
+    </script>
+</body>
+</html>
